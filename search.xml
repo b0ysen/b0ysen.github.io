@@ -8,7 +8,7 @@
       <link href="/2022/01/11/%E5%85%B3%E4%BA%8ESSRF/"/>
       <url>/2022/01/11/%E5%85%B3%E4%BA%8ESSRF/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>服务端请求伪造（Server Side Request Forgery, SSRF）指的是攻击者在未能取得服务器所有权限时，利用服务器漏洞以服务器的身份发送一条构造好的请求给服务器所在内网。SSRF攻击通常针对外部网络无法直接访问的内部系统。</p><p>SSRF可以对外网、服务器所在内网、本地进行端口扫描，攻击运行在内网或本地的应用，或者利用File协议读取本地文件。</p><p>内网服务防御相对外网服务来说一般会较弱，甚至部分内网服务为了运维方便并没有对内网的访问设置权限验证，所以存在SSRF时，通常会造成较大的危害。</p><h2 id="2-利用方式"><a href="#2-利用方式" class="headerlink" title="2.利用方式"></a>2.利用方式</h2><p>SSRF利用存在多种形式以及不同的场景，针对不同场景可以使用不同的利用和绕过方式。</p><p>file协议： 只能读取当前被攻击机的文件，内网机器文件不能读取</p><p>dict协议：泄露安装软件版本信息，查看端口，操作内网redis服务等</p><p>gopher协议：gopher支持发出GET、POST请求。可以先截获get请求包和post请求包，再构造成符合gopher协议的请求。gopher协议是ssrf利用中一个最强大的协议(俗称万能协议)。可用于反弹shell</p><p>http/s协议：探测内网主机存活</p>]]></content>
       
       
       <categories>
