@@ -8,7 +8,7 @@
       <link href="/2022/01/16/Misc(%E4%B8%80)/"/>
       <url>/2022/01/16/Misc(%E4%B8%80)/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="1-常见的文件头-尾"><a href="#1-常见的文件头-尾" class="headerlink" title="1.常见的文件头/尾"></a>1.常见的文件头/尾</h2><table><thead><tr><th>文件类型</th><th align="left">文件头</th><th>文件尾</th></tr></thead><tbody><tr><td>jpg</td><td align="left">FF D8 FF E1</td><td>FF D9</td></tr><tr><td>png</td><td align="left">89 50 4E 47</td><td>AE 42 60 82</td></tr><tr><td>gif</td><td align="left">47 49 46 38</td><td>00 3B</td></tr><tr><td>bmp</td><td align="left">42 4D C0 01</td><td></td></tr><tr><td>zip</td><td align="left">50 4B 03 04</td><td>50 4B</td></tr><tr><td>rar</td><td align="left">52 61 72 21</td><td>C4 3D 7B 00 40 07 00</td></tr><tr><td>pdf</td><td align="left">25 50 44 46 2D 31 2E</td><td></td></tr><tr><td>pcap</td><td align="left">4D 3C 2B 1A</td><td></td></tr></tbody></table><h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2>]]></content>
       
       
       <categories>
