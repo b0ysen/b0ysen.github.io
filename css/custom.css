@@ -27,3 +27,12 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
     background-color: unset ;
     box-shadow: unset ;
 }
+.jg-caption-visible::before {
+    content: "⊙ ";
+} 
+.fancybox-caption__body::before {
+    content: "⊙ ";
+} 
+.img-alt.is-center::before {
+    content: "⊙ ";
+}
