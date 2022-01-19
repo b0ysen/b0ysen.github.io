@@ -4,13 +4,50 @@
   
     
     <entry>
-      <title>Crypto(二)</title>
-      <link href="/2022/01/18/Crypto(%E4%BA%8C)/"/>
-      <url>/2022/01/18/Crypto(%E4%BA%8C)/</url>
+      <title>Crypto(三)</title>
+      <link href="/2022/01/19/Crypto(%E4%B8%89)/"/>
+      <url>/2022/01/19/Crypto(%E4%B8%89)/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> crypto </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> carpto </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Crypto(二)</title>
+      <link href="/2022/01/18/Crypto(%E4%BA%8C)/"/>
+      <url>/2022/01/18/Crypto(%E4%BA%8C)/</url>
+      
+        <content type="html"><![CDATA[<h2 id="2-MD5"><a href="#2-MD5" class="headerlink" title="2.MD5"></a>2.MD5</h2><p>一般MD5值是32位由数字“0-9”和字母“a-f”所组成的字符串，字母大小写统一。16位值是取的是8~24位。</p><p>举例：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">明文：hello，world.123456</span><br><span class="line">md5(hello，world.123456,32) = 5189503aae1b1c0a6fbf7ea9e3128ab0</span><br><span class="line">md5(hello，world.123456,16) = ae1b1c0a6fbf7ea9</span><br></pre></td></tr></table></figure><h2 id="3-SHA-1"><a href="#3-SHA-1" class="headerlink" title="3.SHA 1"></a>3.SHA 1</h2><p> SHA1是一种密码散列函数，SHA1可以生成一个被称为消息摘要的160位，20字节的散列值，散列值通常的呈现形式为<strong>40位十六进制数</strong>。这种加密和MD5类似。</p><p> <strong>特征：</strong> 有固定长度，为40位的字符串</p><p><strong>举例：</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">明文：hello，world.123456</span><br><span class="line">sha1（hello，world.123456）= 0179303b8f08fbc3d16cd23a4be5828790e12375</span><br></pre></td></tr></table></figure><h2 id="4-Unicode编码"><a href="#4-Unicode编码" class="headerlink" title="4.Unicode编码"></a>4.Unicode编码</h2><p>Unicode（统一码、万国码、单一码）是一种在计算机上使用的字符编码。<br>它用两个字节来编码一个字符,字符编码一般用十六进制来表示.</p><p> <strong>举例：</strong></p><p>Unicode有以下四种编码方式：</p><blockquote><p>明文：hello，world.</p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&amp;#x [hex]：&amp;#x0068;&amp;#x0065;&amp;#x006C;&amp;#x006C;&amp;#x006F;&amp;#xFF0C;&amp;#x0077;&amp;#x006F;&amp;#x0072;&amp;#x006C;&amp;#x0064;&amp;#x002E;</span><br><span class="line"></span><br><span class="line">&amp;# [hex]：&amp;#00104;&amp;#00101;&amp;#00108;&amp;#00108;&amp;#00111;&amp;#65292;&amp;#00119;&amp;#00111;&amp;#00114;&amp;#00108;&amp;#00100;&amp;#00046;</span><br><span class="line"></span><br><span class="line">\u [hex]：\U0068\U0065\U006C\U006C\U006F\U002C\U0077\U006F\U0072\U006C\U0064\U002E</span><br><span class="line"></span><br><span class="line">\u+ [hex]：\U+0068\U+0065\U+006C\U+006C\U+006F\U+FF0C\U+0077\U+006F\U+0072\U+006C\U+0064\U+002E</span><br></pre></td></tr></table></figure><h2 id="5-HTML实体编码"><a href="#5-HTML实体编码" class="headerlink" title="5.HTML实体编码"></a>5.HTML实体编码</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">明文：hello，world.</span><br><span class="line">十进制：&amp;#104;&amp;#101;&amp;#108;&amp;#108;&amp;#111;&amp;#65292;&amp;#119;&amp;#111;&amp;#114;&amp;#108;&amp;#100;&amp;#46;</span><br><span class="line">十六进制：&amp;#x68;&amp;#x65;&amp;#x6C;&amp;#x6C;&amp;#x6F;&amp;#xFF0C;&amp;#x77;&amp;#x6F;&amp;#x72;&amp;#x6C;&amp;#x64;&amp;#x2E;</span><br></pre></td></tr></table></figure><h2 id="6-URL编码"><a href="#6-URL编码" class="headerlink" title="6.URL编码"></a>6.URL编码</h2><p>编码方法很简单，在该字节ascii码的的16进制字符前面加%. 如 空格字符，ascii码是32，对应16进制是’20’，那么urlencode编码结果是:%20。</p><p>编码前面都有%</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">明文：hello,world</span><br><span class="line">%68%65%6c%6c%6f%a3%ac%77%6f%72%6c%64%2e</span><br></pre></td></tr></table></figure><h2 id="7-Hex编码"><a href="#7-Hex编码" class="headerlink" title="7.Hex编码"></a>7.Hex编码</h2><p>十六进制（Hexadecimal）</p><p>它是计算机中数据的一种表示方法，<strong>由0-9，A-F组 成，字母不区分大小写</strong>。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">明文：hello，world.</span><br><span class="line">密文（带%）：%68%65%6c%6c%6f%ef%bc%8c%77%6f%72%6c%64%2e</span><br><span class="line">密文（不带%）：68656C6C6FEFBC8C776F726C642E</span><br></pre></td></tr></table></figure><h2 id="8-Jother编码"><a href="#8-Jother编码" class="headerlink" title="8.Jother编码"></a>8.Jother编码</h2><p>只用 **! + ( ) [ ] { } **这八个字符就能完成对任意字符串的编码。可在F12中解密执行</p><img src="/2022/01/18/Crypto(%E4%BA%8C)/image-20220119172909513.png" alt="Jother编码" style="zoom:25%;"><h2 id="9-JSFuck"><a href="#9-JSFuck" class="headerlink" title="9.JSFuck"></a>9.JSFuck</h2><p><strong>与jother很像，只是少了{ }</strong></p><h2 id="10-Quoted-printable编码"><a href="#10-Quoted-printable编码" class="headerlink" title="10.Quoted-printable编码"></a>10.Quoted-printable编码</h2><p>任何一个8位的字节值可编码为3个字符：一个等号”=”后跟随两个十六进制数字(0–9或A–F)表示该字节的数值.</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">明文：天上掉下了个猪八戒</span><br><span class="line">密文：=E5=A4=A9=E4=B8=8A=E6=8E=89=E4=B8=8B=E4=BA=86=E4=B8=AA=E7=8C=AA=E5=85=AB=E6=88=92</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> crypto </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> crypto </tag>
+            
+        </tags>
       
     </entry>
     
