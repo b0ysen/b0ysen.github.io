@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>HGAME 2022 writeup</title>
-      <link href="/2022/01/29/HGAME%202022-Writeup/"/>
-      <url>/2022/01/29/HGAME%202022-Writeup/</url>
+      <title>HGAME 2022 Official Writeup</title>
+      <link href="/2022/01/29/HGAME%202022%20Official%20Writeup/"/>
+      <url>/2022/01/29/HGAME%202022%20Official%20Writeup/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Week-1"><a href="#Week-1" class="headerlink" title="Week 1"></a>Week 1</h1>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>[Toc]</p><h1 id="Week-1"><a href="#Week-1" class="headerlink" title="Week 1"></a><strong><em>Week</em> 1</strong></h1><h2 id="Web"><a href="#Web" class="headerlink" title="Web"></a><em>Web</em></h2><h3 id="Tetris-plus"><a href="#Tetris-plus" class="headerlink" title="Tetris plus"></a>Tetris plus</h3><blockquote><p>考点：JavaScript代码审计</p></blockquote><p>打开源代码，相关代码在<code>checking.js</code>里 </p><p>![image-20220129225654330](HGAME 2022 Official Writeup/image-20220129225654330.png)</p>]]></content>
       
       
       <categories>
