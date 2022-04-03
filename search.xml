@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>ROP学习</title>
+      <link href="/2022/04/03/ROP%E5%AD%A6%E4%B9%A0/"/>
+      <url>/2022/04/03/ROP%E5%AD%A6%E4%B9%A0/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>ROP</strong>(Return Oriented Programming)： 在<strong>栈缓冲区溢出的基础上，利用程序中已有的小片段 (gadgets) 来改变某些寄存器或者变量的值，从而控制程序的执行流程。</strong>所谓 gadgets 就是以 ret 结尾的指令序列，通过这些指令序列，我们可以修改某些地址的内容，方便控制程序的执行流程。</p><p>ROP 攻击一般得满足如下条件</p><ul><li>程序存在溢出，并且可以控制返回地址。</li><li>可以找到满足条件的 gadgets 以及相应 gadgets 的地址。</li></ul><h2 id="ret2text"><a href="#ret2text" class="headerlink" title="ret2text"></a>ret2text</h2><p>ret2text 即控制程序执行程序本身已有的的代码 (.text)。我们控制执行程序已有的代码的时候也可以控制程序执行好几段不相邻的程序已有的代码 (也就是 gadgets)，这就是我们所要说的 ROP。</p><p>这时，我们需要知道对应返回的代码的位置。当然程序也可能会开启某些保护，我们需要想办法去绕过这些保护。</p><h2 id="ret2shellcode"><a href="#ret2shellcode" class="headerlink" title="ret2shellcode"></a>ret2shellcode</h2><p>控制程序执行 shellcode 代码。shellcode 指的是用于完成某个功能的汇编代码，常见的功能主要是获取目标系统的 shell.一般来说，shellcode 需要我们自己填充。</p><p>在栈溢出的基础上，要想执行 shellcode，需要对应的 binary 在运行时，shellcode 所在的区域具有可执行权限。</p><h2 id="ret2syscall"><a href="#ret2syscall" class="headerlink" title="ret2syscall"></a>ret2syscall</h2><p>控制程序执行系统调用，获取 shell。</p><h2 id="ret2libc"><a href="#ret2libc" class="headerlink" title="ret2libc"></a>ret2libc</h2><p>即控制函数的执行 libc 中的函数，通常是返回至某个函数的 plt 处或者函数的具体位置 (即函数对应的 got 表项的内容)。一般情况下，我们会选择执行 system(“/bin/sh”)，故而此时我们需要知道 system 函数的地址。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Stack Overflow </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Stack Overflow </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Crypto(二)</title>
       <link href="/2022/01/18/Crypto(%E4%BA%8C)/"/>
       <url>/2022/01/18/Crypto(%E4%BA%8C)/</url>
