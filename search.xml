@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>浅学pwn的笔记</title>
+      <link href="/2022/04/06/%E6%B5%85%E5%AD%A6pwn%E7%9A%84%E7%AC%94%E8%AE%B0/"/>
+      <url>/2022/04/06/%E6%B5%85%E5%AD%A6pwn%E7%9A%84%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="2022-04-06-pwn学习笔记"><a href="#2022-04-06-pwn学习笔记" class="headerlink" title="2022-04-06  pwn学习笔记"></a>2022-04-06  pwn学习笔记</h2><h3 id="1-ELF文件"><a href="#1-ELF文件" class="headerlink" title="1.ELF文件"></a>1.ELF文件</h3><p>由多个节组成：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.text——存放一个程序运行所需的所有代码                                        </span><br><span class="line">.rdata——存放程序使用到的不可修改的静态数据，如字符串</span><br><span class="line">.data———存放程序可修改的数据</span><br><span class="line">.bss——存放程序的可修改数据(未被初始化，不占用ELF空间)</span><br><span class="line">.plt .got——程序调用动态链接库(SO文件)中函数时，需要这两个节以获取被调用函数的地址</span><br></pre></td></tr></table></figure><h3 id="2-整数溢出"><a href="#2-整数溢出" class="headerlink" title="2.整数溢出"></a>2.整数溢出</h3><p>以32位整数为例</p><blockquote><p>无符号上溢：无符号数0xffffffff加1变为0</p><p>无符号下溢：无符号数0减1变为0xffffffff</p><p>有符号上溢：有符号数正数0x7fffffff加1变为负数0x80000000</p><p>无符号下溢：有符号数0x80000000减1变为正数0x7fffffff</p></blockquote><h4 id="2-1整数溢出转换成缓冲区溢出"><a href="#2-1整数溢出转换成缓冲区溢出" class="headerlink" title="2.1整数溢出转换成缓冲区溢出"></a>2.1整数溢出转换成缓冲区溢出</h4><h4 id="2-2整数溢出转数组越界"><a href="#2-2整数溢出转数组越界" class="headerlink" title="2.2整数溢出转数组越界"></a>2.2整数溢出转数组越界</h4>]]></content>
+      
+      
+      <categories>
+          
+          <category> pwn </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> pwn </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ROP学习</title>
       <link href="/2022/04/03/ROP%E5%AD%A6%E4%B9%A0/"/>
       <url>/2022/04/03/ROP%E5%AD%A6%E4%B9%A0/</url>
