@@ -13,14 +13,16 @@
       
       <categories>
           
-          <category> -[pwn,二进制] </category>
+          <category> pwn </category>
+          
+          <category> 二进制 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> -[pwn,二进制] </tag>
+            <tag> pwn,二进制 </tag>
             
         </tags>
       
