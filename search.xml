@@ -8,7 +8,7 @@
       <link href="/2022/06/17/%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%BC%8F%E6%B4%9E/"/>
       <url>/2022/06/17/%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%BC%8F%E6%B4%9E/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><img src="/2022/06/17/%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%BC%8F%E6%B4%9E/image-20220617132148632.png" style="zoom:25%;"><p>格式化字符串函数是根据格式化字符串函数来进行解析的。<strong>那么相应的要被解析的参数的个数也自然是由这个格式化字符串所控制</strong>。</p><p>在进入printf之后，函数首先会获取第一个参数，一个个读取其字符串会遇到两种情况：</p><ul><li>当前字符不是 %，直接输出到相应标准输出。</li><li>当前字符是 %， 继续读取下一个字符<ul><li>如果没有字符，报错</li><li>如果下一个字符是 %, 输出 %</li><li>否则根据相应的字符，获取相应的参数，对其进行解析并输出</li></ul></li></ul><p>如果我们写成了这个样子</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;Color %s, Number %d, Float %4.2f&quot;</span>);</span><br></pre></td></tr></table></figure><p>没有提供参数，然而程序照样运行，会将栈上存储格式化字符串地址上面的三个变量分别解析为</p><ol><li><p>解析其地址对应的字符串</p></li><li><p>解析其内容对应的整形值</p></li><li><p>解析其内容对应的浮点值</p><p>对于1来说如果提供了一个0这样的不可访问地址，程序就会崩溃。</p></li></ol>]]></content>
       
       
       <categories>
